@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "name": "Viviane",
+  "account": {
+    "id": 1,
+    "number": "01.097954-4",
+    "agency": "2030",
+    "balance": 624.12,
+    "limit": 1000
+  },
+  "card": {
+    "id": 1,
+    "number": "xxxx xxxx xxxx 1111",
+    "limit": 2000
+  },
+  "features": [
+    {
+      "id": 1,
+      "icon": "URL",
+      "description": "PIX"
+    },
+    {
+      "id": 2,
+      "icon": "URL",
+      "description": "Pagar"
+    },
+    {
+      "id": 3,
+      "icon": "URL",
+      "description": "Transferir"
+    },
+    {
+      "id": 4,
+      "icon": "URL",
+      "description": "Conta Corrente"
+    },
+    {
+      "id": 5,
+      "icon": "URL",
+      "description": "Cartões"
+    }
+  ],
+  "news": [
+    {
+      "id": 2,
+      "icon": "URL",
+      "description": "Santander Seguro Casa, seu faz-tudo. Mais de 50 serviços pra você. Confira!"
+    },
+    {
+      "id": 1,
+      "icon": "URL",
+      "description": "O Santander tem soluções de crédito sob medida pra você. Confira!"
+    }
+  ]
+}

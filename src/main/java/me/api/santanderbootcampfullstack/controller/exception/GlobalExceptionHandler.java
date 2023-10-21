@@ -14,20 +14,15 @@ import me.api.santanderbootcampfullstack.service.exception.NotFoundException;
 public class GlobalExceptionHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
-
-    // Tratamento de BusinessException
+    
     @ExceptionHandler(BusinessException.class)
     public ResponseEntity<String> handleBusinessException(BusinessException ex) {
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY);
-    }
-
-    // Tratamento de NotFoundException
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY);    }
+    
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<String> handleNotFoundException(NotFoundException ex) {
-        return new ResponseEntity<>("Resource ID not found.", HttpStatus.NOT_FOUND);
-    }
-
-    // Tratamento de exceções genéricas
+        return new ResponseEntity<>("Resource ID not found.", HttpStatus.NOT_FOUND);   }
+    
     @ExceptionHandler(Throwable.class)
     public ResponseEntity<String> handleUnexpectedException(Throwable unexpectedException) {
         String message = "Unexpected server error.";

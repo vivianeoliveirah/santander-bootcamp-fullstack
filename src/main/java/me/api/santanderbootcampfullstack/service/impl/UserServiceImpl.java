@@ -14,11 +14,7 @@ import static java.util.Optional.ofNullable;
 
 @Service
 public class UserServiceImpl implements UserService {
-
-    /**
-     * ID de usuário utilizado na Santander Dev Week 2023.
-     * Por isso, vamos criar algumas regras para mantê-lo integro.
-     */
+    
     private static final Long UNCHANGEABLE_USER_ID = 1L;
 
     private final UserRepository userRepository;

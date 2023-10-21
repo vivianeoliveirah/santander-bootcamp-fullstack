@@ -4,7 +4,7 @@
 
 Você pode usar o Mermaid para criar diagramas de classes no seu README. Aqui está o seu código corrigido:
 
-```mermaid
+^^^ mermaid
 classDiagram
   class User {
     - id: int
@@ -45,3 +45,5 @@ User "1" _-- "1..*" Account : has
 User "1" _-- "N..*" Feature : has
 User "1" *-- "1..*" Card : has
 User "1" *-- "N..*" News : has
+
+^^^

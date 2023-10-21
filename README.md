@@ -4,45 +4,4 @@
 
 Você pode usar o Mermaid para criar diagramas de classes no seu README. Aqui está o seu código corrigido:
 
-```mermaid
-classDiagram
-  class User {
-    - id: int
-    - name: string
-    - accounts: Account[]
-    - cards: Card[]
-    - features: Feature[]
-    - news: News[]
-  }
-
-  class Account {
-    - id: int
-    - number: string
-    - agency: string
-    - balance: float
-    - limit: float
-  }
-
-  class Card {
-    - id: int
-    - number: string
-    - limit: float
-  }
-
-  class Feature {
-    - id: int
-    - icon: string
-    - description: string
-  }
-
-  class News {
-    - id: int
-    - icon: string
-    - description: string
-  }
-
-User "1" _-- "1..*" Account : has
-User "1" _-- "N..*" Feature : has
-User "1" *-- "1..*" Card : has
-User "1" *-- "N..*" News : has
-```
+[![](https://mermaid.ink/img/pako:eNqdUrtuwzAM_BWBY2EPXb0FKbo1S9AlVQdGolMBFmXogSII_O-VbRmBkzZDF5E8UryTyAsopwkaUB2G8GLw5NFKFmKKxXsgLy5jLES9j97wSTBaKshGKZc4CpxtQV8JY_L08Sna2QslsUWvhcpHiXf0HXIVZzMig-Qr89L6ljzZI_k1hididV56TgXiiB2yojXYGWviHVORe8tklOM1oikob_po5sSqyfS0R1ofShg_4r_804gkPEsQT3VdvM11IHf5XfbKm_-8vy1D-vXyqBYqsOQtGp13Z1IuIX5R3gxosqupxdRFCZKHXIopuv2ZFTTRJ6og9RojlW2DpsUuZJS0ic6_lX0cTQU98sG5pWb4AZNo3Wc?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqdUrtuwzAM_BWBY2EPXb0FKbo1S9AlVQdGolMBFmXogSII_O-VbRmBkzZDF5E8UryTyAsopwkaUB2G8GLw5NFKFmKKxXsgLy5jLES9j97wSTBaKshGKZc4CpxtQV8JY_L08Sna2QslsUWvhcpHiXf0HXIVZzMig-Qr89L6ljzZI_k1hididV56TgXiiB2yojXYGWviHVORe8tklOM1oikob_po5sSqyfS0R1ofShg_4r_804gkPEsQT3VdvM11IHf5XfbKm_-8vy1D-vXyqBYqsOQtGp13Z1IuIX5R3gxosqupxdRFCZKHXIopuv2ZFTTRJ6og9RojlW2DpsUuZJS0ic6_lX0cTQU98sG5pWb4AZNo3Wc)

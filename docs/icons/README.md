@@ -1,3 +1,3 @@
 # Ícones
 
-Todos os ícones utilizados na Santander Dev Week 2023 em formato SVG.
+Todos os ícones utilizados em formato SVG.
